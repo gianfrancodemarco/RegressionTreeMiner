@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>tree</OriginalElement>
+  <nodes>
+    <node x="471.0" y="365.0">tree.LeafNode</node>
+    <node x="357.0" y="0.0">tree.Node</node>
+    <node x="471.0" y="729.0">tree.DiscreteNode</node>
+    <node x="0.0" y="642.0">tree.SplitNode.SplitInfo</node>
+    <node x="192.0" y="277.0">tree.SplitNode</node>
+    <node x="775.0" y="0.0">tree.RegressionTree</node>
+    <node x="192.0" y="729.0">tree.ContinuousNode</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tree.SplitNode.SplitInfo" target="tree.SplitNode">
+      <point x="0.0" y="-135.5" />
+      <point x="86.0" y="617.0" />
+      <point x="235.16666666666669" y="617.0" />
+      <point x="-86.33333333333331" y="157.5" />
+    </edge>
+    <edge source="tree.LeafNode" target="tree.Node">
+      <point x="0.0" y="-69.5" />
+      <point x="582.5" y="252.0" />
+      <point x="499.5" y="252.0" />
+      <point x="47.5" y="113.5" />
+    </edge>
+    <edge source="tree.ContinuousNode" target="tree.SplitNode">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="157.5" />
+    </edge>
+    <edge source="tree.DiscreteNode" target="tree.SplitNode">
+      <point x="0.0" y="-48.5" />
+      <point x="600.5" y="617.0" />
+      <point x="407.8333333333333" y="617.0" />
+      <point x="86.33333333333331" y="157.5" />
+    </edge>
+    <edge source="tree.SplitNode" target="tree.Node">
+      <point x="0.0" y="-157.5" />
+      <point x="321.5" y="252.0" />
+      <point x="404.5" y="252.0" />
+      <point x="-47.5" y="113.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="513.8888888888889" y="405.44444444444446" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
