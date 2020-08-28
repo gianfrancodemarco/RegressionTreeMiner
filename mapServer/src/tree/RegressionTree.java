@@ -192,7 +192,7 @@ public class RegressionTree implements Serializable {
 			objectOutputStream.writeObject("QUERY");
 			objectOutputStream.writeObject(((SplitNode) root).formulateQuery());
 			risp = Integer.parseInt(objectInputStream.readObject().toString());
-			if (risp == -1 || risp >= root.getNumberOfChildren())
+			if (risp < 0 || risp >= root.getNumberOfChildren())
 				throw new UnkownValueException("The answer should be an integer between 0 and " + (root.getNumberOfChildren() - 1) + "!");
 			else
 				childTree[risp].predictClass(objectOutputStream, objectInputStream);
